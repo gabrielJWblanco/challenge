@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+.title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: start;
+}
+.list {
+  width: 100%;
+  list-style: none;
+}
+.form-input {
+  width: 250px;
+  height: 40px;
+  padding: 10px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px 0px 0px 10px;
+  transition: 500ms;
+}
+.form-input:focus {
+  border-color: rgb(255, 196, 196);
+}
+.form-input:hover {
+  border-color: rgb(255, 196, 196);
+}
+.form-input:focus {
+  outline-offset: 0px !important;
+  outline: none !important;
+}
+.form-button {
+  width: 70px;
+  height: 40px;
+  border-radius: 0px 10px 10px 0px;
+  border-style: solid;
+  background-color: white;
+  border-color: white;
+  cursor: pointer;
+  transition: 500ms;
+}
+.form-button:hover {
+  border-color: rgb(255, 196, 196);
+}
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  justify-self: center;
+  align-items: center;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  border-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: 500ms;
+}
+.todo-text {
+  float: right;
+}
+.todo-checkbox {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.todo-list:hover {
+  transform: scale(1.05);
+}
+.todo-delete {
+  transition: 500ms;
+}
+.todo-delete:hover {
+  color: red;
+  transform: scale(1.3);
+}
+.todo-edit-submit {
+  margin-left: 15px;
+  transition: 500ms;
+  transform: scale(1.9);
+}
+.todo-edit-submit:hover {
+  color: green;
+  transform: scale(2.4);
+}
+.todo-edit {
+  margin-left: 15px;
+  transition: 500ms;
+}
+.todo-edit:hover {
+  color: rgb(63, 63, 238);
+  transform: scale(1.3);
+}
+.todo-input-edit {
+  padding: 10px;
+  border-radius: 10px;
+  height: 30px;
+  border-style: solid;
+}
+.hide-checkbox {
+  display: flex;
+  margin-top: 30px;
+  justify-content: start;
+}
+.hide-checkbox input {
+  width: 15px;
+  height: 15px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
